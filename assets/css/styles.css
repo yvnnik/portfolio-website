@@ -1,12 +1,12 @@
 :root {
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
   --bg-color-white: #fcfcfc;
   --primary-color: #4756df;
   --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
+  --tertiary-color: white;
+  --shadow-position: 0 0.1rem 1rem 0.1rem;
+  --primary-shadow-color: #8b8eaf;
+  --secondary-shadow-color: #C4CBE1;
+  --top-margin: 0.5rem;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -109,7 +109,7 @@ nav ul li {
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  box-shadow: var(--shadow-position) var(--primary-shadow-color);
 }
 
 .bio h1 {
@@ -127,6 +127,7 @@ nav ul li {
 }
 
 .more-about h2 {
+  margin-top: 2rem;
   margin-bottom: var(--bottom-margin);
   text-align: center;
 }
@@ -152,16 +153,16 @@ nav ul li {
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 .icon-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  background-color: var(--tertiary-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-position) var(--secondary-shadow-color);
   padding: 20px;
-  margin: 10px;
+  margin: 12px;
 }
 
 .projects {
@@ -177,7 +178,7 @@ nav ul li {
 
 .projects-container {
   display: flex;
-  /* putting projects side by side */
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -207,9 +208,9 @@ nav ul li {
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: var(--tertiary-color);
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
+  box-shadow: var(--shadow-position) var(--primary-shadow-color);
   padding: 20px;
   margin: 10px;
 }
@@ -228,7 +229,7 @@ nav ul li {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: var(--shadow-position) var(--secondary-shadow-color);
 }
 
 .contact-form-container label {
@@ -262,7 +263,7 @@ nav ul li {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
+  background-color: var(--tertiary-color);
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -273,6 +274,7 @@ nav ul li {
 .submit-btn:hover {
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
+  color: var(--bg-color-white);
   cursor: pointer;
 }
 
