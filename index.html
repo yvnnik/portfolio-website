@@ -6,20 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!--CSS Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
 
-  <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Yannik Quellmalz | Media IT specialist</title>
 </head>
 
 <body>
-  <!-- Navbar -->
   <nav>
     <h1>YANNIK QUELLMALZ</h1>
     <ul class="navigation">
@@ -33,37 +33,36 @@
     </button>
   </nav>
 
-  <!-- Hero Section -->
   <section class="hero" id="about">
     <img src="assets/images/yobama.jpg" alt="yannik-quellmalz" loading="lazy" class="hero-img" />
     <div class="bio animate__animated animate__shakeX"> <!-- class names from animate.css -->
       <h2 class="bio-title">About Me</h2>
       <p class="bio-text">
-        My name is Yannik Quellmalz, I am 21 years old and I am currently working as a "Service Technician" at ST Sportservice GmbH in Leipzig. In September 2023, I successfully completed my studies in media informatics and thus attained the academic degree of "Bachelor of Engineering".
+        My name is Yannik Quellmalz, I am 21 years old and I am currently working as a "Service Technician" at ST
+        Sportservice GmbH in Leipzig. In September 2023, I successfully completed my studies in media informatics and
+        thus attained the academic degree of "Bachelor of Engineering".
       </p>
     </div>
   </section>
 
-  <!-- More about -->
   <section class="more-about">
     <h2>More About Me</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-      nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-      autem deleniti cupiditate molestias quis unde quae totam porro dicta
-      iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      I have been interested in computer science, graphic design and video editing since my school days. That's why I
+      decided to study "media informatics" dual at the Dresden University of Cooperative Education (Berufsakademie
+      Sachsen - Standort Dresden) after graduating from high school in 2020. My training partner was ST Sportservice
+      GmbH in Leipzig.
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-      nostrum dolor minus, libero delectus praesentium perferendis
+      After I finished my studies in September 2023, I was taken on by my practice partner ST Sportservice GmbH and have
+      been working and living in Leipzig ever since.
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-      consequuntur labore? Ea totam voluptas amet!
+      In my free time I like to do sports. I actively go to a gym myself, but I also like to play team sports. So I
+      played soccer for a long time before I devoted myself to basketball.
     </p>
   </section>
 
-  <!-- Skills section -->
   <section class="skills" id="skills">
     <h2 class="skill-header">My Top Skills</h2>
 
@@ -74,8 +73,6 @@
         <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
       </div>
 
-      <!-- split in 2 groups for better readability -->
-
       <div class="second-set animate__animated animate__pulse">
         <img src="assets/icons/icons8-photoshop.svg" alt="" loading="lazy" class="icon icon-card" />
         <img src="assets/icons/icons8-adobe-premiere-pro.svg" alt="" loading="lazy" class="icon icon-card" />
@@ -85,7 +82,6 @@
   </section>
 
 
-  <!-- Projects section -->
   <section class="projects" id="projects">
     <h2 class="projects-title">Some of my Recent Projects</h2>
     <div class="projects-container">
@@ -109,14 +105,14 @@
         <img src="assets/images/stream-deck.png" alt="discord-background" loading="lazy" class="project-pic" />
         <h3 class="project-title">My bachelor thesis</h3>
         <p class="project-details">
-          As part of my bachelor thesis, I designed a plugin for Elgato's Stream Deck that can be used to control TV graphics.
+          As part of my bachelor thesis, I designed a plugin for Elgato's Stream Deck that can be used to control TV
+          graphics.
         </p>
         <a href="#" target="_blank" class="project-link">Check it Out</a>
       </div>
     </div>
   </section>
 
-  <!-- Contact section -->
   <section class="contact" id="contact">
     <h2>Get In Touch With Me</h2>
     <div class="contact-form-container">
@@ -143,7 +139,6 @@
     </div>
   </section>
 
-  <!-- Social accounts - Fixed to the right -->
   <div class="socials">
     <a href="#" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy"
         class="socicon" /></a>
@@ -155,11 +150,9 @@
         class="socicon" /></a>
   </div>
 
-  <!-- Scroll to top -->
   <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow"
       alt="scroll-up" /></i>
 
-  <!-- Footer section -->
   <footer>
     <p class="copy">&copy; Copyright 2023</p>
     <p class="copy">
@@ -168,12 +161,11 @@
     </p>
   </footer>
 
-  <!-- Website scripts -->
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app.js" defer></script>
 
   <!-- Ion icons scripts -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 </body>
 
 </html>
