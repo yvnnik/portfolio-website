@@ -101,8 +101,8 @@ nav ul li {
 }
 
 .hero img {
-  /* height: 37.5rem; */
-  width: 37.5rem;
+  height: 28rem;
+  width: 22rem;
 }
 
 .bio {
@@ -134,7 +134,7 @@ nav ul li {
 
 .more-about p {
   line-height: var(--line-height);
-  padding: 0.4rem;
+  padding: 0.5rem 8rem;
 }
 
 .skills {
@@ -240,22 +240,22 @@ nav ul li {
 
 .contact-form-container textarea {
   min-height: 6.25rem;
-  font-size: 14px;
+  font-size: 0.8rem;
+  
 }
 
 .contact-form-container .input-field {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
   border: none;
-  border: 2px outset var(--primary-color);
-  font-size: 0.875rem;
+  border: 0.1rem outset var(--primary-color);
+  font-size: 0.8rem;
   outline: none;
 }
 
 .input-field::placeholder {
-  padding: 0.5rem;
+  padding: 1rem;
   color: var(--primary-color);
 }
 
@@ -276,6 +276,78 @@ nav ul li {
   border: 2px solid var(--primary-color);
   color: var(--bg-color-white);
   cursor: pointer;
+}
+
+.test-section {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  background-color: var(--bg-color-white);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.container {
+  position : relative;
+  width : 1100px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap: wrap;
+  padding : 30px;  
+}
+
+.container .card {
+  position: relative;
+  max-width : 300px;
+  height : 10rem;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : var(--shadow-position) var(--primary-shadow-color);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+
+.container .card:hover {
+  height : 16rem;    
+}
+
+.container .card .image {
+  position : relative;
+  width : 260px;
+  height : 8rem;
+  top : -40%;
+  left: 8px;
+  box-shadow : var(--shadow-position) var(--primary-shadow-color);
+  z-index : 1;
+}
+
+.container .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.container .card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  text-align : center;
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+}
+
+.container .card .content h3 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.container .card:hover .content {
+   margin-top : 4rem;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
 }
 
 .socials {
