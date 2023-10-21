@@ -14,7 +14,7 @@
 }
 
 html, body {
-  --font-family: "Inter", sans-serf;
+  --font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -172,8 +172,7 @@ nav ul li {
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  height: 8rem;
 }
 
 .projects-container {
@@ -190,8 +189,8 @@ nav ul li {
 
 .project-container {
   text-align: center;
-  width: 21.875rem;
-  /* width of individual project containers, puts them apart from sides for better ux */
+  width: 22rem;
+  height: 20rem;
   padding: 1rem;
 }
 
@@ -234,14 +233,13 @@ nav ul li {
 
 .contact-form-container label {
   line-height: 2.7em;
-  font-weight: var(--bold-font);
+  font-weight: 500;
   color: var(--primary-color);
 }
 
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 0.8rem;
-  
 }
 
 .contact-form-container .input-field {
@@ -282,7 +280,6 @@ nav ul li {
   display: flex;
   flex-direction: column;
   position: fixed;
-  /* fixed to the right */
   right: 1%;
   bottom: 50%;
 }
@@ -371,8 +368,8 @@ footer {
   }
 
   .icon {
-    width: 5.875rem;
-    height: 5.25rem;
+    width: 6rem;
+    height: 5rem;
   }
 
   .projects-container {
@@ -380,11 +377,11 @@ footer {
   }
 
   .project-container {
-    width: 20.875rem;
+    width: 20rem;
   }
 
   .contact-form-container {
-    max-width: 23.75rem;
+    max-width: 24rem;
   }
 }
 
@@ -405,4 +402,16 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
-} 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --bg-color-white: #373737;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --tertiary-color: rgb(30, 30, 30);
+  --shadow-position: 0 0.1rem 1rem 0.1rem;
+  --primary-shadow-color: #8b8eaf;
+  --secondary-shadow-color: #C4CBE1;
+  }
+}
