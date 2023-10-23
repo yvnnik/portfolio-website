@@ -99,6 +99,11 @@ nav ul li {
   position: fixed;
   top: 6rem;
   right: 1rem;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--bg-color-white);
+  border: 0px;
 }
 
 .hero {
