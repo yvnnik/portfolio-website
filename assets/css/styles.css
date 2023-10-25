@@ -26,11 +26,11 @@ html, body {
 
 body.dark-theme {
   color: #eee;
-  background: #4b4b4b;
-  --bg-color-white: rgb(71, 71, 71);
+  background: #3a3b3c;
+  --bg-color-white: #3F3F3F;
   --primary-color: #BB86FC;
-  --primary-shadow-color: rgb(66, 66, 66);
-  --secondary-shadow-color: rgb(36, 36, 36);
+  --primary-shadow-color: #242526;
+  --secondary-shadow-color: #818181;
 }
 
 ul {
@@ -176,7 +176,7 @@ nav ul li {
 .icon-card {
   background-color: var(--tertiary-color);
   border-radius: 12px;
-  box-shadow: var(--shadow-position) var(--secondary-shadow-color);
+  box-shadow: var(--shadow-position) var(--primary-shadow-color);
   padding: 20px;
   margin: 12px;
 }
@@ -226,7 +226,7 @@ nav ul li {
 .project-card {
   background-color: var(--tertiary-color);
   border-radius: 11px;
-  box-shadow: var(--shadow-position) var(--primary-shadow-color);
+  box-shadow: var(--shadow-position) var(--secondary-shadow-color);
   padding: 20px;
   margin: 10px;
 }
@@ -245,7 +245,7 @@ nav ul li {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: var(--shadow-position) var(--secondary-shadow-color);
+  box-shadow: var(--shadow-position) var(--primary-shadow-color);
 }
 
 .contact-form-container label {
