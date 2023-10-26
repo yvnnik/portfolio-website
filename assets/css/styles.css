@@ -1,5 +1,6 @@
 :root {
-  --bg-color-white: #fcfcfc;
+  --bg-color1: #fcfcfc;
+  --bg-color2: white;
   --primary-color: #4756df;
   --secondary-color: #ff7235;
   --tertiary-color: white;
@@ -27,7 +28,8 @@ html, body {
 body.dark-theme {
   color: #eee;
   background: #3a3b3c;
-  --bg-color-white: #3F3F3F;
+  --bg-color1: #3F3F3F;
+  --bg-color2: #3a3b3c;
   --primary-color: #BB86FC;
   --primary-shadow-color: #242526;
   --secondary-shadow-color: #818181;
@@ -59,7 +61,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color-white);
+  background-color: var(--bg-color1);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -102,7 +104,7 @@ nav ul li {
   border-radius: 8px;
   padding: 0.5rem;
   background-color: var(--primary-color);
-  color: var(--bg-color-white);
+  color: var(--bg-color1);
   border: 0px;
   font-family: "Inter", sans-serif;
 }
@@ -138,7 +140,7 @@ nav ul li {
 }
 
 .more-about {
-  background-color: var(--bg-color-white);
+  background-color: var(--bg-color1);
   padding: 1rem 6rem;
 }
 
@@ -154,7 +156,6 @@ nav ul li {
 }
 
 .skills {
-  max-width: 68.75rem;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
@@ -174,7 +175,7 @@ nav ul li {
 }
 
 .icon-card {
-  background-color: var(--tertiary-color);
+  background-color: var(--bg-color1);
   border-radius: 12px;
   box-shadow: var(--shadow-position) var(--primary-shadow-color);
   padding: 20px;
@@ -182,7 +183,7 @@ nav ul li {
 }
 
 .projects {
-  background-color: var(--bg-color-white);
+  background-color: var(--bg-color1);
   padding: 32px 0;
   margin-top: 2rem;
 }
@@ -208,7 +209,7 @@ nav ul li {
   width: 22rem;
   height: 20rem;
   padding: 1rem;
-  color: black;
+  background-color: var(--bg-color2);
 }
 
 .project-container p {
@@ -224,9 +225,8 @@ nav ul li {
 }
 
 .project-card {
-  background-color: var(--tertiary-color);
   border-radius: 11px;
-  box-shadow: var(--shadow-position) var(--secondary-shadow-color);
+  box-shadow: var(--shadow-position) var(--primary-shadow-color);
   padding: 20px;
   margin: 10px;
 }
@@ -289,7 +289,7 @@ nav ul li {
 .submit-btn:hover {
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
-  color: var(--bg-color-white);
+  color: var(--bg-color1);
   cursor: pointer;
 }
 
@@ -304,10 +304,12 @@ nav ul li {
 .socicon {
   width: 2rem;
   height: 2rem;
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
 }
 
 footer {
-  background-color: var(--bg-color-white);
+  background-color: var(--bg-color1);
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
@@ -323,6 +325,8 @@ footer {
 .up-arrow {
   width: 3rem;
   height: 3rem;
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
 }
 
 .gallery {
@@ -375,8 +379,7 @@ footer {
 
   nav ul {
     position: fixed;
-    /* make nav float on screen */
-    background-color: var(--bg-color-white);
+    background-color: var(--bg-color1);
     flex-direction: column;
     top: 86px;
     left: 10%;
