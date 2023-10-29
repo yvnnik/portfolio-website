@@ -261,17 +261,21 @@ nav ul li {
 
 .contact-form-container .input-field {
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   border: none;
   border: 0.1rem outset var(--primary-color);
   font-size: 0.8rem;
   outline: none;
+  color: var(--primary-color);
 }
 
 .input-field::placeholder {
-  padding: 1rem;
   color: var(--primary-color);
+}
+
+.contact input:focus {
+  border: 1px solid var(--secondary-color);
 }
 
 .submit-btn {
