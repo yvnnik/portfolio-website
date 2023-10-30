@@ -359,6 +359,32 @@ footer {
   vertical-align: bottom;
 }
 
+.note {
+  margin: 2rem;
+}
+
+.frontend-projects {
+  padding: 2rem;
+}
+
+.frontend-project-container {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--bg-color2);
+}
+
+.frontend-project-card {
+  border-radius: 11px;
+  box-shadow: var(--shadow-position) var(--primary-shadow-color);
+  padding: 20px;
+  margin: 2rem 4rem;
+}
+
+.frontend-project-pic {
+  width: 24rem;
+  margin-bottom: 0.5rem;
+}
+
 @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
   .gallery ul {
     flex-direction: row;
