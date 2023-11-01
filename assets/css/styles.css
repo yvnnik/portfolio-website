@@ -361,16 +361,26 @@ footer {
 
 .premiere {
   text-align: center;
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color1);
+  padding: 1rem;
 }
 
 .premiere h2 {
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 .premiere video {
-  width: 70%;
-  margin-bottom: 2rem;
+  width: 60%;
+  box-shadow: var(--shadow-position) var(--primary-shadow-color);
+}
+
+.caption {
+  margin: 1rem 0 3rem 0;
+}
+
+.aftereffects {
+  text-align: center;
+  padding: 1rem;
 }
 
 .note {
