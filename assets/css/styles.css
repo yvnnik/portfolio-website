@@ -359,6 +359,20 @@ footer {
   vertical-align: bottom;
 }
 
+.premiere {
+  text-align: center;
+  background-color: var(--bg-color2);
+}
+
+.premiere h2 {
+  margin: 1rem;
+}
+
+.premiere video {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
 .note {
   margin: 2rem;
 }
@@ -370,7 +384,7 @@ footer {
 .frontend-project-container {
   text-align: center;
   padding: 1rem;
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color1);
 }
 
 .frontend-project-card {
