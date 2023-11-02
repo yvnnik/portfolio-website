@@ -410,6 +410,37 @@ footer {
 }
 
 @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+  }
+  
+  .hero img {
+    height: 37.5rem;
+    width: 23rem;
+  }
+
+  .bio {
+    width: 18.3rem;
+    margin-top: 7rem;
+  }
+
+  .bio-text {
+    bottom: -2rem;
+  }
+
+  .more-about {
+    width: 80%;
+    margin: 0 1rem;
+  }
+
+  .project-container {
+    width: 17.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 17.75rem;
+  }
+  
   .gallery ul {
     flex-direction: row;
   }
@@ -499,24 +530,5 @@ footer {
 
   .contact-form-container {
     max-width: 24rem;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
-  }
-
-  .bio {
-    width: 18.3rem;
-  }
-
-  .project-container {
-    width: 17.875rem;
-  }
-
-  .contact-form-container {
-    max-width: 17.75rem;
   }
 }
