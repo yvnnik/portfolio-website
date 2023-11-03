@@ -24,8 +24,25 @@ navLink.forEach((link) =>
   })
 );
 
-const btn = document.querySelector('.btn-toggle');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    // } else {
+    //   entry.target.classList.remove('show');
+    }
+  });
+});
 
-btn.addEventListener('click', function() {
-  document.body.classList.toggle('dark-theme')  
-}) 
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+  var rellax = new Rellax('.rellax', {
+    speed: -2,
+    center: false,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });

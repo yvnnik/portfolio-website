@@ -19,7 +19,7 @@
   <title>Yannik Quellmalz | media informatics</title>
 </head>
 
-<body class="dark-theme || light-theme">
+<body>
   <nav>
     <h1>YANNIK QUELLMALZ</h1>
     <ul class="navigation">
@@ -33,22 +33,18 @@
     </button>
   </nav>
 
-  <button class="btn-toggle">Change Theme</button>
-
-  <section class="hero" id="about">
-    <img src="assets/images/yannik_ki_upscale.png" alt="picture of yannik quellmalz" loading="lazy" class="hero-img" />
-    <div class="bio animate__animated animate__shakeX"> <!-- class names from animate.css -->
-      <h2 class="bio-title">About Me</h2>
-      <p class="bio-text">
-        My name is Yannik Quellmalz, I am 21 years old and I am currently working as a "Service Technician" at ST
-        Sportservice GmbH in Leipzig. In September 2023, I successfully completed my studies in media informatics and
-        thus attained the academic degree of "Bachelor of Engineering".
-      </p>
-    </div>
+  <section class="hero">
+    <img src="assets/images/yannik_ki_upscale.png" alt="picture of yannik quellmalz" loading="lazy" class="hero-img"/>
+    <h1>YANNIK QUELLMALZ</h1>
   </section>
 
-  <section class="more-about">
+  <section class="about" id="about">
     <h2>More About Me</h2>
+    <p>
+      My name is Yannik Quellmalz, I am 21 years old and I am currently working as a "Service Technician" at ST
+        Sportservice GmbH in Leipzig. In September 2023, I successfully completed my studies in media informatics and
+        thus attained the academic degree of "Bachelor of Engineering".
+    </p>
     <p>
       I have been interested in computer science, graphic design and video editing since my school days. That's why I
       decided to study "media informatics" dual at the Dresden University of Cooperative Education (Berufsakademie
@@ -70,15 +66,15 @@
 
     <div class="skills-wrapper">
       <div class="first-set animate__animated animate__pulse">
-        <img src="assets/icons/icons8-html5.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-css.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-html5.svg" alt="" loading="lazy" class="icon icon-card hidden" />
+        <img src="assets/icons/icons8-css.svg" alt="" loading="lazy" class="icon icon-card hidden" />
+        <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card hidden" />
       </div>
 
       <div class="second-set animate__animated animate__pulse">
-        <img src="assets/icons/icons8-photoshop.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-adobe-premiere-pro.svg" alt="" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/icons8-adobe-after-effects.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-photoshop.svg" alt="" loading="lazy" class="icon icon-card hidden" />
+        <img src="assets/icons/icons8-adobe-premiere-pro.svg" alt="" loading="lazy" class="icon icon-card hidden" />
+        <img src="assets/icons/icons8-adobe-after-effects.svg" alt="" loading="lazy" class="icon icon-card hidden" />
       </div>
     </div>
   </section>
@@ -86,7 +82,7 @@
   <section class="projects" id="projects">
     <h2 class="projects-title">Some of my Recent Projects</h2>
     <div class="projects-container">
-      <div class="project-container project-card">
+      <div class="project-container project-card hidden">
         <img src="assets/images/figma.jpg" alt="Figma-logo" loading="lazy" class="project-pic" />
         <h3 class="project-title">Designing stuff with figma</h3>
         <p class="project-details">
@@ -94,7 +90,7 @@
         </p>
         <a href="figma.html" target="_self" class="project-link">Check it Out</a>
       </div>
-      <div class="project-container project-card">
+      <div class="project-container project-card hidden">
         <img src="assets/images/toxcol_website.jpeg" alt="frontend development example picture" loading="lazy"
           class="project-pic">
         <h3 class="project-title">Frontend development</h3>
@@ -104,7 +100,7 @@
         </p>
         <a href="projects.html" target="_self" class="project-link">Check it Out</a>
       </div>
-      <div class="project-container project-card">
+      <div class="project-container project-card hidden">
         <img src="assets/images/Adobe-Creative-Cloud.png" alt="Adobe-Logo" loading="lazy" class="project-pic" />
         <h3 class="project-title">Working with Adobe programmes</h3>
         <p class="project-details">
@@ -112,7 +108,7 @@
         </p>
         <a href="adobe.html" target="_self" class="project-link">Check it Out</a>
       </div>
-      <div class="project-container project-card">
+      <div class="project-container project-card hidden">
         <img src="assets/images/stream-deck.png" alt="Elgato Stream Deck" loading="lazy" class="project-pic" />
         <h3 class="project-title">My bachelor thesis</h3>
         <p class="project-details">
@@ -175,7 +171,6 @@
 
   <script src="assets/js/app.js" defer></script>
 
-  <!-- Ion icons scripts -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
 </body>
