@@ -6,7 +6,7 @@
   --color5: #247aa3;
   --shadow-position: 0 0.1rem 1rem 0.1rem;
   --primary-shadow-color: #8b8eaf;
-  --secondary-shadow-color: #C4CBE1;
+  --shadow-color2: #717171;
   --top-margin: 2rem;
   --bottom-margin: 1rem;
   --bottom-margin-2: 1rem;
@@ -24,6 +24,10 @@ html, body {
 
 body {
   font-family: var(--font-family);
+  overflow-x: hidden;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -108,24 +112,48 @@ p {
   display: flex;
   justify-content: center;
   height: 90vh;
+  position: relative;
+  transform-style: inherit;
+}
+
+.hero img::before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
 }
 
 .hero img {
   height: 90vh;
   left: 10px;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   left: 32%;
 }
 
-.hero h1 {
+.title {
   color: var(--color2);
   font-size: 25rem;
   position: absolute;
-  z-index: 0;
-  width: 1000%;
+  z-index: -2;
+  width: 100%;
   left: 0;
   font-weight: 1000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  animation: animate var(--t) linear infinite;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: translateX(100%);
+  }
+  100%
+  {
+    transform: translateX(-410%);
+  }
 }
 
 .about {
@@ -133,6 +161,7 @@ p {
   color: var(--color1);
   height: 100vh;
   padding: 1rem 20rem;
+  z-index: 1;
 }
 
 .about h2 {
@@ -213,7 +242,7 @@ p {
 
 .project-card {
   border-radius: 11px;
-  box-shadow: var(--shadow-position) var(--primary-shadow-color);
+  box-shadow: var(--shadow-position) var(--shadow-color2);
   padding: 20px;
   margin: 10px;
 }
@@ -333,6 +362,10 @@ footer {
 }
 
 .gallery {
+  background-color: var(--color3);
+  color: var(--color2);
+  min-height: 100vh;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -360,7 +393,8 @@ footer {
 
 .premiere {
   text-align: center;
-  background-color: var(--bg-color1);
+  background-color: var(--color2);
+  color: var(--color1);
   padding: 1rem;
 }
 
@@ -370,7 +404,7 @@ footer {
 
 .premiere video {
   width: 60%;
-  box-shadow: var(--shadow-position) var(--primary-shadow-color);
+  box-shadow: var(--shadow-position) var(--shadow-color2);
 }
 
 .caption {
@@ -380,6 +414,8 @@ footer {
 .aftereffects {
   text-align: center;
   padding: 1rem;
+  background-color: var(--color3);
+  color: var(--color2);
 }
 
 .note {
@@ -388,12 +424,14 @@ footer {
 
 .frontend-projects {
   padding: 2rem;
+  background-color: var(--color3);
+  color: var(--color2);
+  min-height: 100vh;
 }
 
 .frontend-project-container {
   text-align: center;
-  padding: 1rem;
-  background-color: var(--bg-color1);
+  background-color: var(--color1);
 }
 
 .frontend-project-card {
