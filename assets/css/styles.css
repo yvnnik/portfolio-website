@@ -99,6 +99,7 @@ h2 {
   margin: var(--top-margin) 0 var(--bottom-margin) 0;
   font-size: var(--headings-font-size);
   line-height: var(--headings-line-height);
+  text-transform: uppercase;
 }
 
 p {
