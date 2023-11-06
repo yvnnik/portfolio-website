@@ -176,6 +176,10 @@ p {
   left: 50%;
 }
 
+.about p {
+  margin-bottom: 1rem;
+}
+
 .skills {
   background-color: var(--color3);
   color: var(--color2);
@@ -326,14 +330,6 @@ p {
   cursor: pointer;
 }
 
-.socials {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 1%;
-  bottom: 50%;
-}
-
 .socicon {
   width: 2rem;
   height: 2rem;
@@ -342,14 +338,21 @@ p {
 }
 
 footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
   background-color: var(--color2);
   color: var(--color1);
   padding: 1.25rem;
   text-align: center;
 }
 
+footer a:hover {
+  color: var(--color1);
+}
+
 .scroll-up {
-  position: fixed;
   right: 0.5%;
   bottom: 3%;
   cursor: pointer;
